@@ -1,0 +1,23 @@
+{
+  "queries": [
+    {
+      "objectName": "web.analysis:type=PageViewCounter,name=pageViewCounter",
+      "resultAlias": "web.analysis.PageViewCounter",
+      "attributes": [
+        "PvCount"
+      ]
+    }
+  ],
+  "outputWriters": [
+    {
+      "@class": "org.jmxtrans.embedded.output.ConsoleWriter"
+    },
+    {
+      "@class": "org.jmxtrans.embedded.output.GraphiteWriter",
+      "settings": {
+        "host": "${graphite.host:localhost}",
+        "port": "${graphite.port:2003}"
+      }
+    }
+  ]
+}
