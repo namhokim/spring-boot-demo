@@ -1,0 +1,14 @@
+spring:
+  jmx:
+    enabled: true
+metric:
+  application: spring-boot-demo
+  ebname: spring-boot-demo
+  hostname: instance-id
+management:
+  metrics:
+    export:
+      graphite:
+        host: 127.0.0.1
+        enabled: true
+        port: 8125
