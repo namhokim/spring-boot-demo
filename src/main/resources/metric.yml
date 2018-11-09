@@ -1,0 +1,4 @@
+metric:
+  application: spring-boot-demo
+  ebname: spring-boot-demo
+  hostname: instance-id

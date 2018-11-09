@@ -1,10 +1,6 @@
 spring:
   jmx:
     enabled: true
-metric:
-  application: spring-boot-demo
-  ebname: spring-boot-demo
-  hostname: instance-id
 management:
   metrics:
     export:
