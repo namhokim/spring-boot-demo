@@ -12,3 +12,9 @@ test for spring boot feature and more
 - application.yml overrided by application-local.yml
 - Runnin with VM option:
 ```-Dspring.profiles.active=local```
+
+# Dependencies
+
+- graphite
+- lombok
+- spock
